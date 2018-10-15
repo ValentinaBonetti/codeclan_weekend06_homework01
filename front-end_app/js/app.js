@@ -36,6 +36,10 @@ const createPlayersListItem = function(form){
   speciality.textContent = form.speciality.value;
   playersListItem.appendChild(speciality);
 
+  const inspired_by = document.createElement('p');
+  inspired_by.textContent = form.inspired_by.value;
+  playersListItem.appendChild(inspired_by);
+
   return playersListItem;
 }
 
